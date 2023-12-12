@@ -131,3 +131,5 @@ function startCheck() {
     installDocker
     installCompose
 }
+
+startCheck
