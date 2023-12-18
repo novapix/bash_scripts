@@ -1,3 +1,1 @@
-# checks Version and Commits if change in version
-
-- Mostly to be used with CI like Github actions
+# BASH SCRIPTS USED FOR AUTOMATION AND BORING TASKS
