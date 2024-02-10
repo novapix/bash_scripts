@@ -30,8 +30,10 @@ json_response=$(curl "https://hub.docker.com/v2/namespaces/$DOCKERHUB_USERRNAME/
 
 api_sha=$(echo "$json_response" | jq -r '.digest')
 
-# Compare commit hash
+# Compare sha digest
 if [ "$api_sha" != "$current_sha" ]; then
     update_version_file "$api_sha"
     commit_update "$api_sha"
 fi
+
+echo "Script execution completed."
